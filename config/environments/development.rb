@@ -4,6 +4,8 @@ Rails.application.configure do
   config.action_cable.allowed_request_origins = [
     # Local address we use for our standalone client
     'file://',
+    /http:\/\/*/, 
+    /https:\/\/*/
   ]
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
